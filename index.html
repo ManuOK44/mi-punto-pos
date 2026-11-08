@@ -37,8 +37,8 @@ function shiftProductPlaceholder(d){
  const target=document.elementFromPoint(d.x,d.y)?.closest('[data-product-row]');
  if(!target||target===d.row||!list.contains(target))return;
  const rect=target.getBoundingClientRect(),before=d.y<rect.top+rect.height/2;
- if(before&&target.nextElementSibling===d.row)return;
- if(!before&&d.row.nextElementSibling===target)return;
+ if(before&&d.row.nextElementSibling===target)return;
+ if(!before&&target.nextElementSibling===d.row)return;
  const nodes=[...list.querySelectorAll('[data-product-row]')];
  const previous=new Map(nodes.map(el=>[el,el.getBoundingClientRect().top]));
  list.insertBefore(d.row,before?target:target.nextSibling);
