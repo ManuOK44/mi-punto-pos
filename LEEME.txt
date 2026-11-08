@@ -1,0 +1,21 @@
+MI PUNTO POS — PRIMERA VERSIÓN
+
+Contenido:
+- index.html: aplicación completa
+- manifest.webmanifest: instalación en pantalla de inicio
+- sw.js: caché de uso sin conexión tras visitar la app
+- icon-192.png e icon-512.png: íconos
+
+PUBLICAR GRATIS EN GITHUB PAGES:
+1. Crea un repositorio nuevo en GitHub (por ejemplo punto-venta-universal).
+2. Sube los cinco archivos a la raíz del repositorio.
+3. En Settings > Pages selecciona Deploy from a branch, main y /(root).
+4. Abre la dirección de GitHub Pages en Safari del iPhone.
+5. Toca Compartir > Agregar a pantalla de inicio.
+
+IMPORTANTE:
+- Los datos se guardan en localStorage del navegador/origen. No hay cuenta, servidor ni sincronización.
+- Exporta respaldos periódicamente desde Ajustes, especialmente antes de cambiar de equipo o limpiar Safari.
+- El modo sin conexión se activa después de la primera carga exitosa y de que el navegador guarde la caché.
+- No es facturación fiscal; los tickets son comprobantes informativos.
+- El inventario descuenta existencias por venta, pero no hay lector de códigos de barras en esta versión.
